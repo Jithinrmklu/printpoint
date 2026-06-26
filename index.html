@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Print Point | Printing Press, Flex Printing &amp; Graphic Design in Cherupuzha, Kerala</title>
+  <meta name="description" content="Print Point is a leading printing press in Cherupuzha, Kerala offering graphic design, flex printing, photo frames, mementos, festival notices, banners, visiting cards and complete printing solutions." />
+  <meta name="keywords" content="Printing Press Cherupuzha, Flex Printing Cherupuzha, Graphic Design Cherupuzha, Printing Services Kerala, Banner Printing Kannur, Photo Frames Cherupuzha, Mementos Cherupuzha, Festival Notice Printing, Advertisement Design Kerala" />
+  <meta name="author" content="Print Point" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://printpoint.in/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://printpoint.in/" />
+  <meta property="og:title" content="Print Point | Printing Press &amp; Graphic Design in Cherupuzha, Kerala" />
+  <meta property="og:description" content="Professional printing, graphic design, flex printing, photo frames, mementos, festival notices and complete printing solutions in Cherupuzha, Kerala." />
+  <meta property="og:site_name" content="Print Point" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Print Point | Printing Press in Cherupuzha, Kerala" />
+  <meta name="twitter:description" content="Professional printing, graphic design, flex printing, photo frames, mementos and complete printing solutions in Cherupuzha, Kerala." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#DC2626',
+            secondary: '#2563EB',
+            accent:    '#F59E0B',
+            brand:     { dark: '#0F172A', light: '#F8FAFC' }
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            inter:   ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: #0F172A; overflow-x: hidden; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif; }
+
+    /* Reveal animation */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left  { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right { opacity: 0; transform: translateX( 40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible, .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* Stagger children */
+    .stagger > *:nth-child(1) { transition-delay: 0.05s; }
+    .stagger > *:nth-child(2) { transition-delay: 0.13s; }
+    .stagger > *:nth-child(3) { transition-delay: 0.21s; }
+    .stagger > *:nth-child(4) { transition-delay: 0.29s; }
+    .stagger > *:nth-child(5) { transition-delay: 0.37s; }
+    .stagger > *:nth-child(6) { transition-delay: 0.45s; }
+    .stagger > *:nth-child(7) { transition-delay: 0.53s; }
+    .stagger > *:nth-child(8) { transition-delay: 0.61s; }
+
+    /* Nav states */
+    .nav-transparent { background: transparent !important; }
+    .nav-scrolled { background: rgba(255,255,255,0.95) !important; backdrop-filter: blur(20px); box-shadow: 0 1px 24px rgba(0,0,0,0.08); }
+
+    /* Nav text adapts to scroll state */
+    .nav-transparent .logo-brand-text { color: #ffffff; }
+    .nav-scrolled   .logo-brand-text  { color: #0F172A; }
+    .nav-transparent .logo-brand-accent { color: #fbbf24; }
+    .nav-scrolled   .logo-brand-accent  { color: #2563EB; }
+    .nav-transparent .logo-tagline { color: rgba(255,255,255,0.45); }
+    .nav-scrolled   .logo-tagline  { color: #9CA3AF; }
+    .nav-transparent .nav-link { color: rgba(255,255,255,0.75); }
+    .nav-transparent .nav-link:hover { color: #ffffff; }
+    .nav-scrolled   .nav-link { color: #4B5563; }
+    .nav-transparent .menu-btn-icon { color: white; }
+    .nav-scrolled   .menu-btn-icon { color: #374151; }
+
+    /* Gradient mesh hero */
+    .hero-bg {
+      background: #0F172A;
+      position: relative;
+      overflow: hidden;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    /* Glass card */
+    .glass {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+    }
+
+    /* Service card hover */
+    .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+
+    /* Portfolio tile */
+    .portfolio-tile { overflow: hidden; border-radius: 16px; position: relative; cursor: pointer; }
+    .portfolio-tile img, .portfolio-tile .tile-inner { transition: transform 0.4s ease; }
+    .portfolio-tile:hover .tile-inner { transform: scale(1.04); }
+    .portfolio-overlay { position: absolute; inset: 0; background: rgba(15,23,42,0.72); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; border-radius: 16px; }
+    .portfolio-tile:hover .portfolio-overlay { opacity: 1; }
+
+    /* Timeline connector */
+    .timeline-line { position: absolute; left: 50%; transform: translateX(-50%); top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #DC2626, #2563EB); z-index: 0; }
+
+    /* Counter */
+    .counter-num { font-family: 'Poppins', sans-serif; }
+
+    /* Testimonial card */
+    .testimonial-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.10); }
+
+    /* Gradient text — warm gold shimmer on dark hero */
+    .gradient-text {
+      background: linear-gradient(135deg, #fde68a 0%, #fbbf24 35%, #fb923c 65%, #fde68a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Pulse ring on CTA */
+    @keyframes pulse-ring {
+      0%   { transform: scale(1); opacity: 0.6; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+    .pulse-ring::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: #22c55e;
+      animation: pulse-ring 1.8s ease-out infinite;
+      z-index: -1;
+    }
+
+    /* Section badge */
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Floating shapes */
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+    .float-anim { animation: float 4s ease-in-out infinite; }
+    .float-anim-slow { animation: float 6s ease-in-out infinite; }
+
+    /* Nav call button adapts */
+    .nav-transparent .nav-call-btn { background: rgba(255,255,255,0.15); box-shadow: none; border: 1px solid rgba(255,255,255,0.25); }
+    .nav-transparent .nav-call-btn:hover { background: rgba(255,255,255,0.25); }
+    .nav-scrolled   .nav-call-btn { background: #2563EB; border: none; }
+    .nav-transparent .nav-transparent-whatsapp { border-color: rgba(74,222,128,0.5); color: #4ade80; }
+    .nav-scrolled   .nav-transparent-whatsapp   { border-color: #22c55e; color: #16a34a; }
+    .nav-scrolled   .nav-transparent-whatsapp:hover { background: #f0fdf4; }
+
+    /* Mobile menu */
+    #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    #mobile-menu.open { max-height: 480px; }
+  </style>
+
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Print Point",
+    "description": "Professional printing press and graphic design center in Cherupuzha, Kerala offering flex printing, banner printing, photo frames, mementos, visiting cards, and complete printing solutions.",
+    "url": "https://printpoint.in",
+    "telephone": "+919745397910",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bus Stand, Near Cherupuzha",
+      "addressLocality": "Cherupuzha",
+      "addressRegion": "Kerala",
+      "postalCode": "670511",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.1550",
+      "longitude": "75.5220"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "20:00" }
+    ],
+    "priceRange": "₹₹",
+    "servesCuisine": [],
+    "sameAs": []
+  }
+  </script>
+</head>
+
+<body class="bg-white">
+
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════ -->
+<nav id="navbar" class="nav-transparent fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 md:px-0">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-2.5 group">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-700 to-red-700 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+        <span class="text-white font-poppins font-bold text-lg leading-none">P</span>
+      </div>
+      <div>
+        <span class="font-poppins font-extrabold text-xl logo-brand-text leading-none block transition-colors duration-300">Print<span class="logo-brand-accent transition-colors duration-300">Point</span></span>
+        <span class="text-[10px] logo-tagline font-inter tracking-widest uppercase leading-none transition-colors duration-300">Design · Print · Inspire</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#home"     class="nav-link text-sm font-inter font-medium transition-colors duration-300 hover:opacity-100">Home</a>
+      <a href="#about"    class="nav-link text-sm font-inter font-medium transition-colors duration-300 hover:opacity-100">About</a>
+      <a href="#services" class="nav-link text-sm font-inter font-medium transition-colors duration-300 hover:opacity-100">Services</a>
+      <a href="#portfolio" class="nav-link text-sm font-inter font-medium transition-colors duration-300 hover:opacity-100">Portfolio</a>
+      <a href="#why-us"   class="nav-link text-sm font-inter font-medium transition-colors duration-300 hover:opacity-100">Why Us</a>
+      <a href="#contact"  class="nav-link text-sm font-inter font-medium transition-colors duration-300 hover:opacity-100">Contact</a>
+    </div>
+
+    <!-- CTA Buttons desktop -->
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="https://wa.me/919745397910" target="_blank" rel="noopener"
+         class="flex items-center gap-2 px-4 py-2 rounded-full border border-green-400/70 text-green-400 text-sm font-medium hover:bg-green-500/10 transition-all nav-transparent-whatsapp">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+      </a>
+      <a href="tel:+919745397910"
+         class="flex items-center gap-2 px-5 py-2 rounded-full bg-secondary text-white text-sm font-medium hover:bg-blue-700 transition-colors shadow-md shadow-blue-200/60 nav-call-btn">
+        <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Menu">
+      <i data-lucide="menu" class="w-6 h-6 menu-btn-icon transition-colors duration-300" id="menu-icon"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-100 mt-4">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+      <a href="#home"      onclick="closeMobileMenu()" class="py-2.5 px-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">Home</a>
+      <a href="#about"     onclick="closeMobileMenu()" class="py-2.5 px-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">About</a>
+      <a href="#services"  onclick="closeMobileMenu()" class="py-2.5 px-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">Services</a>
+      <a href="#portfolio" onclick="closeMobileMenu()" class="py-2.5 px-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">Portfolio</a>
+      <a href="#why-us"    onclick="closeMobileMenu()" class="py-2.5 px-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">Why Choose Us</a>
+      <a href="#contact"   onclick="closeMobileMenu()" class="py-2.5 px-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">Contact</a>
+      <div class="flex gap-3 mt-3 pt-3 border-t border-gray-100">
+        <a href="https://wa.me/919745397910" target="_blank" rel="noopener"
+           class="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl border border-green-500 text-green-600 text-sm font-medium">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+        </a>
+        <a href="tel:+919745397910"
+           class="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-primary text-white text-sm font-medium">
+          <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+
+  <!-- Blobs -->
+  <div class="blob w-96 h-96 bg-primary top-10 -left-20" style="opacity:.25"></div>
+  <div class="blob w-80 h-80 bg-secondary bottom-20 right-10" style="opacity:.2"></div>
+  <div class="blob w-64 h-64 bg-accent top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="opacity:.12"></div>
+
+  <!-- Grid overlay -->
+  <div class="absolute inset-0 opacity-5"
+       style="background-image: linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+                                 linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+              background-size: 48px 48px;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-12 w-full py-16 lg:py-24">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Left: Copy -->
+      <div>
+        <!-- Badge -->
+        <div class="section-badge bg-white/10 text-white border border-white/20 mb-6 float-anim">
+          <span class="w-2 h-2 rounded-full bg-accent inline-block"></span>
+          Cherupuzha's Premier Printing Partner
+        </div>
+
+        <h1 class="font-poppins font-black text-white leading-[1.08] text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6">
+          Bringing Your<br/>
+          <span class="gradient-text">Ideas to Life</span><br/>
+          Through Print.
+        </h1>
+
+        <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+          Professional printing, graphic design, flex printing, photo frames,
+          mementos, festival notices, business branding, and custom printing
+          solutions in Cherupuzha, Kerala.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-3 mb-10">
+          <a href="tel:+919745397910"
+             class="relative flex items-center gap-2.5 px-7 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105 text-base"
+             style="background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); box-shadow: 0 8px 32px rgba(234,88,12,0.45);">
+            <i data-lucide="phone-call" class="w-5 h-5"></i> Call Now
+          </a>
+          <a href="https://wa.me/919745397910" target="_blank" rel="noopener"
+             class="flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-green-500 text-white font-semibold shadow-2xl shadow-green-900/30 hover:bg-green-600 transition-all hover:scale-105 text-base">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us
+          </a>
+          <a href="#services"
+             class="flex items-center gap-2.5 px-7 py-3.5 rounded-full border border-white/30 text-white font-semibold hover:bg-white/10 transition-all text-base glass">
+            Explore Services <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="flex flex-wrap gap-4">
+          <div class="glass rounded-2xl px-5 py-3 text-center">
+            <div class="font-poppins font-bold text-2xl text-white">1000<span class="text-accent">+</span></div>
+            <div class="text-gray-400 text-xs mt-0.5">Happy Customers</div>
+          </div>
+          <div class="glass rounded-2xl px-5 py-3 text-center">
+            <div class="font-poppins font-bold text-2xl text-white">5000<span class="text-accent">+</span></div>
+            <div class="text-gray-400 text-xs mt-0.5">Prints Delivered</div>
+          </div>
+          <div class="glass rounded-2xl px-5 py-3 text-center">
+            <div class="font-poppins font-bold text-2xl text-white">10<span class="text-accent">+</span></div>
+            <div class="text-gray-400 text-xs mt-0.5">Years of Service</div>
+          </div>
+          <div class="glass rounded-2xl px-5 py-3 text-center">
+            <div class="font-poppins font-bold text-2xl text-white"><i data-lucide="check-circle" class="w-5 h-5 text-accent inline-block mb-0.5"></i></div>
+            <div class="text-gray-400 text-xs mt-0.5">Complete Solutions</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Decorative illustration cluster — structured grid, zero overlap -->
+      <div class="hidden lg:block w-full max-w-[420px] mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+
+          <!-- Row 1 — Graphic Design (top-left) -->
+          <div class="glass rounded-2xl p-4 float-anim shadow-xl" style="animation-delay:0s">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0 shadow-md">
+                <i data-lucide="pen-tool" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-white font-semibold text-sm font-poppins">Graphic Design</span>
+            </div>
+            <div class="flex gap-1">
+              <div class="h-1.5 flex-1 rounded-full bg-secondary"></div>
+              <div class="h-1.5 flex-1 rounded-full bg-secondary/60"></div>
+              <div class="h-1.5 w-6 rounded-full bg-secondary/25"></div>
+            </div>
+          </div>
+
+          <!-- Row 1 — Flex Banners (top-right) -->
+          <div class="glass rounded-2xl p-4 float-anim-slow shadow-xl" style="animation-delay:0.4s">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mb-2 shadow-md">
+              <i data-lucide="flag" class="w-4 h-4 text-white"></i>
+            </div>
+            <div class="text-white font-semibold text-sm font-poppins">Flex Banners</div>
+            <div class="text-gray-400 text-xs mt-0.5">Large format printing</div>
+          </div>
+
+          <!-- Row 2 — Central card spanning both columns -->
+          <div class="col-span-2 glass rounded-3xl p-6 text-center float-anim shadow-2xl" style="animation-delay:0.2s">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-700 to-red-700 mx-auto flex items-center justify-center mb-3 shadow-lg shadow-red-900/30">
+              <i data-lucide="printer" class="w-7 h-7 text-white"></i>
+            </div>
+            <div class="font-poppins font-bold text-white text-lg">Premium Printing</div>
+            <div class="text-gray-400 text-sm mt-1">Quality you can feel</div>
+            <div class="flex justify-center gap-3 mt-4">
+              <div class="flex items-center gap-1.5 glass rounded-full px-3 py-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                <span class="text-gray-300 text-xs">Fast Delivery</span>
+              </div>
+              <div class="flex items-center gap-1.5 glass rounded-full px-3 py-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                <span class="text-gray-300 text-xs">Premium Quality</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3 — Photo Frames (bottom-left) -->
+          <div class="glass rounded-2xl p-4 float-anim-slow shadow-xl" style="animation-delay:0.8s">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-yellow-600 flex items-center justify-center mb-2 shadow-md">
+              <i data-lucide="image" class="w-4 h-4 text-white"></i>
+            </div>
+            <div class="text-white font-semibold text-sm font-poppins">Photo Frames</div>
+            <div class="text-gray-400 text-xs mt-0.5">Mementos &amp; Gifts</div>
+          </div>
+
+          <!-- Row 3 — Visiting Cards (bottom-right) -->
+          <div class="glass rounded-2xl p-4 float-anim shadow-xl" style="animation-delay:1.2s">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-500 to-violet-700 flex items-center justify-center mb-2 shadow-md">
+              <i data-lucide="credit-card" class="w-4 h-4 text-white"></i>
+            </div>
+            <div class="text-white font-semibold text-sm font-poppins">Visiting Cards</div>
+            <div class="text-gray-400 text-xs mt-0.5">Business identity</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave divider -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 60 L0 30 Q360 0 720 30 Q1080 60 1440 30 L1440 60 Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════ -->
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Copy -->
+      <div class="reveal-left">
+        <div class="section-badge bg-red-50 text-primary mb-5">
+          <i data-lucide="info" class="w-3.5 h-3.5"></i> About Us
+        </div>
+        <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-6 leading-tight">
+          Your Trusted Printing Partner<br/>
+          <span class="text-secondary">in Cherupuzha</span>
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-5">
+          Print Point is one of the trusted printing and design centers in Cherupuzha, Kerala.
+          We specialize in creative design and premium-quality printing services for businesses,
+          educational institutions, events, festivals, and individuals.
+        </p>
+        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+          From concept to final print, we ensure every project receives attention to detail,
+          quality craftsmanship, and timely delivery — making your ideas come alive beautifully.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="tel:+919745397910"
+             class="flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-white font-semibold hover:bg-blue-700 transition-all hover:scale-105 shadow-lg shadow-blue-200">
+            <i data-lucide="phone" class="w-4 h-4"></i> Get In Touch
+          </a>
+          <a href="#services"
+             class="flex items-center gap-2 px-6 py-3 rounded-full border-2 border-gray-200 text-brand-dark font-semibold hover:border-primary hover:text-primary transition-colors">
+            Our Services <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Feature grid -->
+      <div class="reveal-right">
+        <div class="grid grid-cols-2 gap-4 stagger">
+          <!-- Card 1 -->
+          <div class="reveal bg-gradient-to-br from-red-50 to-rose-100 rounded-2xl p-5 border border-red-100 service-card">
+            <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
+              <i data-lucide="palette" class="w-5 h-5 text-primary"></i>
+            </div>
+            <div class="font-poppins font-semibold text-brand-dark mb-1">Creative Designs</div>
+            <div class="text-gray-500 text-sm">Unique visuals that stand out</div>
+          </div>
+          <!-- Card 2 -->
+          <div class="reveal bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-5 border border-blue-100 service-card">
+            <div class="w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center mb-3">
+              <i data-lucide="award" class="w-5 h-5 text-secondary"></i>
+            </div>
+            <div class="font-poppins font-semibold text-brand-dark mb-1">Premium Quality</div>
+            <div class="text-gray-500 text-sm">Professional finish every time</div>
+          </div>
+          <!-- Card 3 -->
+          <div class="reveal bg-gradient-to-br from-amber-50 to-yellow-100 rounded-2xl p-5 border border-amber-100 service-card">
+            <div class="w-11 h-11 rounded-xl bg-accent/10 flex items-center justify-center mb-3">
+              <i data-lucide="tag" class="w-5 h-5 text-accent"></i>
+            </div>
+            <div class="font-poppins font-semibold text-brand-dark mb-1">Affordable Pricing</div>
+            <div class="text-gray-500 text-sm">Quality within your budget</div>
+          </div>
+          <!-- Card 4 -->
+          <div class="reveal bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-5 border border-green-100 service-card">
+            <div class="w-11 h-11 rounded-xl bg-green-500/10 flex items-center justify-center mb-3">
+              <i data-lucide="zap" class="w-5 h-5 text-green-600"></i>
+            </div>
+            <div class="font-poppins font-semibold text-brand-dark mb-1">Fast Delivery</div>
+            <div class="text-gray-500 text-sm">Quick turnaround guaranteed</div>
+          </div>
+          <!-- Card 5 -->
+          <div class="reveal bg-gradient-to-br from-purple-50 to-violet-100 rounded-2xl p-5 border border-purple-100 service-card">
+            <div class="w-11 h-11 rounded-xl bg-purple-500/10 flex items-center justify-center mb-3">
+              <i data-lucide="users" class="w-5 h-5 text-purple-600"></i>
+            </div>
+            <div class="font-poppins font-semibold text-brand-dark mb-1">Personalised Service</div>
+            <div class="text-gray-500 text-sm">We listen to your needs</div>
+          </div>
+          <!-- Card 6 -->
+          <div class="reveal bg-gradient-to-br from-pink-50 to-rose-100 rounded-2xl p-5 border border-pink-100 service-card">
+            <div class="w-11 h-11 rounded-xl bg-pink-500/10 flex items-center justify-center mb-3">
+              <i data-lucide="heart" class="w-5 h-5 text-pink-600"></i>
+            </div>
+            <div class="font-poppins font-semibold text-brand-dark mb-1">Customer Satisfaction</div>
+            <div class="text-gray-500 text-sm">Your happiness is our goal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════ -->
+<section id="services" class="py-24 bg-brand-light">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <!-- Header -->
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge bg-blue-50 text-secondary mb-4 mx-auto inline-flex">
+        <i data-lucide="layers" class="w-3.5 h-3.5"></i> Our Services
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
+        Everything You Need for<br/>
+        <span class="text-secondary">Printing &amp; Branding</span>
+      </h2>
+      <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+        From a single business card to a complete event branding package — we handle it all.
+      </p>
+    </div>
+
+    <!-- Services grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger items-stretch">
+
+      <!-- 1. Graphic Design -->
+      <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-rose-600 flex items-center justify-center mb-5 shadow-lg shadow-red-200 group-hover:scale-110 transition-transform">
+          <i data-lucide="pen-tool" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Graphic Design</h3>
+        <p class="text-gray-500 text-sm mb-4">Creative visual solutions for every need.</p>
+        <ul class="space-y-1.5">
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>Logo Design</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>Poster Design</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>Advertisement Design</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>Social Media Designs</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>Invitation Designs</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>Festival Notices</li>
+        </ul>
+      </div>
+
+      <!-- 2. Printing Services -->
+      <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center mb-5 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+          <i data-lucide="printer" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Printing Services</h3>
+        <p class="text-gray-500 text-sm mb-4">High-quality prints for every format.</p>
+        <ul class="space-y-1.5">
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Flex Printing</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Banner Printing</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Posters &amp; Flyers</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Visiting Cards</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Brochures &amp; Stickers</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Letterheads &amp; Bill Books</li>
+        </ul>
+      </div>
+
+      <!-- 3. Photo & Gift -->
+      <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group flex flex-col">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-amber-600 flex items-center justify-center mb-5 shadow-lg shadow-amber-200 group-hover:scale-110 transition-transform">
+          <i data-lucide="gift" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Photo &amp; Gift Solutions</h3>
+        <p class="text-gray-500 text-sm mb-4">Lasting memories crafted with care.</p>
+        <ul class="space-y-1.5">
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Photo Frames</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Mementos</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Certificate Framing</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Customized Gifts</li>
+        </ul>
+      </div>
+
+      <!-- 4. Business Branding -->
+      <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-violet-700 flex items-center justify-center mb-5 shadow-lg shadow-purple-200 group-hover:scale-110 transition-transform">
+          <i data-lucide="briefcase" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Business Branding</h3>
+        <p class="text-gray-500 text-sm mb-4">Build a powerful brand identity.</p>
+        <ul class="space-y-1.5">
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>Shop Boards</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>Event Branding</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>Product Labels</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>Promotional Materials</li>
+        </ul>
+      </div>
+
+      <!-- 5. Festival & Event -->
+      <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mb-5 shadow-lg shadow-green-200 group-hover:scale-110 transition-transform">
+          <i data-lucide="calendar" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Festival &amp; Event Printing</h3>
+        <p class="text-gray-500 text-sm mb-4">Make every celebration memorable.</p>
+        <ul class="space-y-1.5">
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>Church &amp; Temple Notices</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>Festival Posters</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>Event Banners</li>
+          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>Invitation Cards</li>
+        </ul>
+      </div>
+
+      <!-- 6. Custom Printing -->
+      <div class="reveal bg-gradient-to-br from-brand-dark to-slate-800 rounded-3xl p-7 service-card group relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full translate-x-12 -translate-y-12"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-secondary/20 rounded-full -translate-x-8 translate-y-8"></div>
+        <div class="relative z-10">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-xl text-white mb-2">Custom Printing</h3>
+          <p class="text-gray-400 text-sm mb-4">Anything you can imagine, we can print.</p>
+          <ul class="space-y-1.5">
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Personalized Designs</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Business Promotions</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Special Occasion Printing</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Bulk Printing Services</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA bar below services -->
+    <div class="mt-12 text-center reveal">
+      <p class="text-gray-500 mb-4">Have a custom requirement? We'd love to help.</p>
+      <a href="https://wa.me/919745397910" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition-all hover:scale-105 shadow-lg shadow-green-200">
+        <i data-lucide="message-circle" class="w-5 h-5"></i> Chat With Us on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     PORTFOLIO
+════════════════════════════════════════════════ -->
+<section id="portfolio" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge bg-amber-50 text-accent mb-4 mx-auto inline-flex">
+        <i data-lucide="image" class="w-3.5 h-3.5"></i> Portfolio
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
+        Our Creative <span class="text-accent">Portfolio</span>
+      </h2>
+      <p class="text-gray-500 text-lg max-w-xl mx-auto">
+        A glimpse of the work we do — every project crafted with passion and precision.
+      </p>
+    </div>
+
+    <!-- Masonry-style gallery (CSS columns) -->
+    <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+
+      <!-- Tile 1 — Flex Banner (tall) -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-64 bg-gradient-to-br from-red-500 via-rose-600 to-pink-700 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="flag" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Flex Banners</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="flag" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Flex Banners</div>
+            <div class="text-xs text-gray-300 mt-1">Large format printing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 2 — Shop Board (short) -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-40 bg-gradient-to-br from-blue-500 to-indigo-700 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="store" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Shop Boards</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="store" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Shop Boards</div>
+            <div class="text-xs text-gray-300 mt-1">Business signage</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 3 — Visiting Cards (short) -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-44 bg-gradient-to-br from-amber-400 to-orange-600 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="credit-card" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Visiting Cards</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="credit-card" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Visiting Cards</div>
+            <div class="text-xs text-gray-300 mt-1">Professional identity</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 4 — Festival Notices (tall) -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-72 bg-gradient-to-br from-purple-600 to-violet-800 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="calendar-days" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Festival Notices</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="calendar-days" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Festival Notices</div>
+            <div class="text-xs text-gray-300 mt-1">Event announcements</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 5 — Ad Design -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-52 bg-gradient-to-br from-green-500 to-teal-700 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="megaphone" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Advertisement Designs</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="megaphone" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Ad Designs</div>
+            <div class="text-xs text-gray-300 mt-1">Eye-catching campaigns</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 6 — Photo Frames -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-40 bg-gradient-to-br from-pink-500 to-rose-700 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="image" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Photo Frames</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="image" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Photo Frames</div>
+            <div class="text-xs text-gray-300 mt-1">Cherished memories</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 7 — Mementos (tall) -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-60 bg-gradient-to-br from-cyan-500 to-blue-700 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="trophy" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Mementos</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="trophy" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Mementos</div>
+            <div class="text-xs text-gray-300 mt-1">Personalized keepsakes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 8 — Invitations -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-48 bg-gradient-to-br from-fuchsia-500 to-purple-700 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="mail" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Invitations</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="mail" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Invitations</div>
+            <div class="text-xs text-gray-300 mt-1">Wedding &amp; events</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 9 — Promo Materials -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-44 bg-gradient-to-br from-red-600 to-orange-600 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="layout" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Promotional Materials</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="layout" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Promo Materials</div>
+            <div class="text-xs text-gray-300 mt-1">Brand campaigns</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 10 — Brochures (tall) -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-64 bg-gradient-to-br from-indigo-500 to-blue-800 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="book-open" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Brochures &amp; Flyers</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="book-open" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Brochures</div>
+            <div class="text-xs text-gray-300 mt-1">Print collateral</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 11 — Stickers -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-40 bg-gradient-to-br from-yellow-400 to-amber-600 flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="sticker" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Stickers &amp; Labels</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="sticker" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Stickers</div>
+            <div class="text-xs text-gray-300 mt-1">Product labels</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 12 — Logo Design -->
+      <div class="portfolio-tile break-inside-avoid">
+        <div class="tile-inner h-52 bg-gradient-to-br from-slate-700 to-brand-dark flex flex-col items-center justify-center p-6 rounded-2xl">
+          <i data-lucide="hexagon" class="w-10 h-10 text-white/80 mb-3"></i>
+          <span class="text-white font-poppins font-semibold text-sm">Logo Design</span>
+        </div>
+        <div class="portfolio-overlay rounded-2xl">
+          <div class="text-center text-white p-4">
+            <i data-lucide="hexagon" class="w-8 h-8 mx-auto mb-2 text-accent"></i>
+            <div class="font-poppins font-semibold">Logo Design</div>
+            <div class="text-xs text-gray-300 mt-1">Brand identity</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-12 text-center reveal">
+      <p class="text-gray-400 text-sm">Contact us to see more samples and discuss your project.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     WHY CHOOSE US
+════════════════════════════════════════════════ -->
+<section id="why-us" class="py-24 bg-brand-light">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge bg-red-50 text-primary mb-4 mx-auto inline-flex">
+        <i data-lucide="star" class="w-3.5 h-3.5"></i> Why Choose Us
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
+        Why Customers Trust <span class="text-primary">Print Point</span>
+      </h2>
+      <p class="text-gray-500 text-lg max-w-xl mx-auto">
+        We go beyond printing — we build relationships rooted in quality and trust.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 stagger">
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-red-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="sparkles" class="w-7 h-7 text-primary"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Creative Designs</h4>
+        <p class="text-gray-500 text-sm">Unique and eye-catching designs crafted to grab attention.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary/10 to-blue-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="shield-check" class="w-7 h-7 text-secondary"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">High Quality Printing</h4>
+        <p class="text-gray-500 text-sm">Professional printing with excellent finish and vibrant colours.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="zap" class="w-7 h-7 text-green-600"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Fast Delivery</h4>
+        <p class="text-gray-500 text-sm">Quick turnaround time so you're never kept waiting.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-100 to-yellow-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="tag" class="w-7 h-7 text-accent"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Affordable Pricing</h4>
+        <p class="text-gray-500 text-sm">Quality work delivered at fair and competitive prices.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-100 to-violet-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="layers" class="w-7 h-7 text-purple-600"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Complete Solutions</h4>
+        <p class="text-gray-500 text-sm">Everything from design to printing under one roof.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="map-pin" class="w-7 h-7 text-pink-600"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Local Trusted Business</h4>
+        <p class="text-gray-500 text-sm">Proudly serving Cherupuzha and surrounding areas.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="users" class="w-7 h-7 text-cyan-600"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Personalized Service</h4>
+        <p class="text-gray-500 text-sm">We understand every customer's needs and deliver accordingly.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="search" class="w-7 h-7 text-orange-600"></i>
+        </div>
+        <h4 class="font-poppins font-bold text-brand-dark mb-2">Attention to Detail</h4>
+        <p class="text-gray-500 text-sm">Precision and care in every single project we take on.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     IMPACT / STATS
+════════════════════════════════════════════════ -->
+<section id="impact" class="py-24 relative overflow-hidden"
+         style="background: linear-gradient(135deg, #0F172A 0%, #1e3a5f 50%, #1a0a0a 100%);">
+
+  <!-- Decorative blobs -->
+  <div class="blob w-80 h-80 bg-primary top-0 left-0 -translate-x-20 -translate-y-20" style="opacity:.2"></div>
+  <div class="blob w-72 h-72 bg-secondary bottom-0 right-0 translate-x-20 translate-y-20" style="opacity:.2"></div>
+  <div class="absolute inset-0 opacity-5"
+       style="background-image: radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px);
+              background-size: 32px 32px;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge bg-white/10 text-white border border-white/20 mb-4 mx-auto inline-flex">
+        <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> Our Impact
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-4">
+        Proudly Serving Our <span class="text-accent">Community</span>
+      </h2>
+      <p class="text-gray-400 text-lg max-w-xl mx-auto">
+        Numbers that reflect years of dedication, quality, and community trust.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 stagger" id="stats-section">
+
+      <div class="reveal glass rounded-3xl p-8 text-center">
+        <div class="counter-num text-5xl md:text-6xl font-poppins font-black text-white mb-2"
+             data-target="1000" data-suffix="+">0</div>
+        <div class="text-gray-400 font-inter">Happy Customers</div>
+        <div class="mt-3 w-12 h-1 rounded-full bg-primary mx-auto"></div>
+      </div>
+
+      <div class="reveal glass rounded-3xl p-8 text-center">
+        <div class="counter-num text-5xl md:text-6xl font-poppins font-black text-white mb-2"
+             data-target="5000" data-suffix="+">0</div>
+        <div class="text-gray-400 font-inter">Projects Delivered</div>
+        <div class="mt-3 w-12 h-1 rounded-full bg-secondary mx-auto"></div>
+      </div>
+
+      <div class="reveal glass rounded-3xl p-8 text-center">
+        <div class="counter-num text-5xl md:text-6xl font-poppins font-black text-white mb-2"
+             data-target="10" data-suffix="+">0</div>
+        <div class="text-gray-400 font-inter">Years of Experience</div>
+        <div class="mt-3 w-12 h-1 rounded-full bg-accent mx-auto"></div>
+      </div>
+
+      <div class="reveal glass rounded-3xl p-8 text-center">
+        <div class="counter-num text-5xl md:text-6xl font-poppins font-black text-white mb-2"
+             data-target="100" data-suffix="+">0</div>
+        <div class="text-gray-400 font-inter">Business Partners</div>
+        <div class="mt-3 w-12 h-1 rounded-full bg-green-400 mx-auto"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     HOW WE WORK — TIMELINE
+════════════════════════════════════════════════ -->
+<section id="process" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="text-center mb-20 reveal">
+      <div class="section-badge bg-blue-50 text-secondary mb-4 mx-auto inline-flex">
+        <i data-lucide="git-branch" class="w-3.5 h-3.5"></i> Our Process
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
+        From Idea to <span class="text-secondary">Beautiful Print</span>
+      </h2>
+      <p class="text-gray-500 text-lg max-w-xl mx-auto">
+        A seamless six-step journey from your concept to the final printed product.
+      </p>
+    </div>
+
+    <!-- Desktop timeline -->
+    <div class="hidden md:block relative">
+      <div class="timeline-line"></div>
+
+      <!-- Steps alternating -->
+      <div class="space-y-16">
+
+        <!-- Step 1 -->
+        <div class="flex items-center gap-12 reveal">
+          <div class="flex-1 text-right">
+            <div class="bg-red-50 rounded-2xl p-6 inline-block max-w-sm ml-auto border border-red-100">
+              <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">Understanding Requirements</h4>
+              <p class="text-gray-500 text-sm">We start by listening — understanding your vision, goals, and specific printing needs thoroughly.</p>
+            </div>
+          </div>
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-red-700 flex items-center justify-center shadow-xl shadow-red-200">
+            <span class="text-white font-poppins font-bold text-lg">1</span>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex items-center gap-12 reveal">
+          <div class="flex-1"></div>
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center shadow-xl shadow-blue-200">
+            <span class="text-white font-poppins font-bold text-lg">2</span>
+          </div>
+          <div class="flex-1">
+            <div class="bg-blue-50 rounded-2xl p-6 inline-block max-w-sm border border-blue-100">
+              <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">Creative Design</h4>
+              <p class="text-gray-500 text-sm">Our designers craft visually stunning, purposeful designs tailored to your brand and message.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex items-center gap-12 reveal">
+          <div class="flex-1 text-right">
+            <div class="bg-amber-50 rounded-2xl p-6 inline-block max-w-sm ml-auto border border-amber-100">
+              <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">Customer Approval</h4>
+              <p class="text-gray-500 text-sm">We share the design with you for review. Your feedback is incorporated until you're 100% satisfied.</p>
+            </div>
+          </div>
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-accent to-amber-600 flex items-center justify-center shadow-xl shadow-amber-200">
+            <span class="text-white font-poppins font-bold text-lg">3</span>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex items-center gap-12 reveal">
+          <div class="flex-1"></div>
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center shadow-xl shadow-green-200">
+            <span class="text-white font-poppins font-bold text-lg">4</span>
+          </div>
+          <div class="flex-1">
+            <div class="bg-green-50 rounded-2xl p-6 inline-block max-w-sm border border-green-100">
+              <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">High-Quality Printing</h4>
+              <p class="text-gray-500 text-sm">We print using professional-grade equipment ensuring sharp, vibrant, and lasting results.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="flex items-center gap-12 reveal">
+          <div class="flex-1 text-right">
+            <div class="bg-purple-50 rounded-2xl p-6 inline-block max-w-sm ml-auto border border-purple-100">
+              <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">Finishing &amp; Packaging</h4>
+              <p class="text-gray-500 text-sm">Every print is carefully finished — trimmed, laminated, or mounted — and packed securely.</p>
+            </div>
+          </div>
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-violet-700 flex items-center justify-center shadow-xl shadow-purple-200">
+            <span class="text-white font-poppins font-bold text-lg">5</span>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="flex items-center gap-12 reveal">
+          <div class="flex-1"></div>
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-pink-500 to-rose-700 flex items-center justify-center shadow-xl shadow-pink-200">
+            <span class="text-white font-poppins font-bold text-lg">6</span>
+          </div>
+          <div class="flex-1">
+            <div class="bg-pink-50 rounded-2xl p-6 inline-block max-w-sm border border-pink-100">
+              <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">Delivery</h4>
+              <p class="text-gray-500 text-sm">Your order is ready for pickup or delivered to your doorstep on time, every time.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile timeline (vertical, simple) -->
+    <div class="md:hidden space-y-5">
+
+      <div class="flex gap-4 items-start reveal">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-red-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-red-200 mt-1">
+          <span class="text-white font-poppins font-bold text-sm">1</span>
+        </div>
+        <div class="bg-red-50 rounded-2xl p-5 flex-1 border border-red-100">
+          <h4 class="font-poppins font-bold text-brand-dark mb-1">Understanding Requirements</h4>
+          <p class="text-gray-500 text-sm">We listen to your vision and specific printing needs.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start reveal">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200 mt-1">
+          <span class="text-white font-poppins font-bold text-sm">2</span>
+        </div>
+        <div class="bg-blue-50 rounded-2xl p-5 flex-1 border border-blue-100">
+          <h4 class="font-poppins font-bold text-brand-dark mb-1">Creative Design</h4>
+          <p class="text-gray-500 text-sm">Designers craft stunning visuals tailored to your brand.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start reveal">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-amber-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-200 mt-1">
+          <span class="text-white font-poppins font-bold text-sm">3</span>
+        </div>
+        <div class="bg-amber-50 rounded-2xl p-5 flex-1 border border-amber-100">
+          <h4 class="font-poppins font-bold text-brand-dark mb-1">Customer Approval</h4>
+          <p class="text-gray-500 text-sm">We share designs for review until you're 100% happy.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start reveal">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-200 mt-1">
+          <span class="text-white font-poppins font-bold text-sm">4</span>
+        </div>
+        <div class="bg-green-50 rounded-2xl p-5 flex-1 border border-green-100">
+          <h4 class="font-poppins font-bold text-brand-dark mb-1">High-Quality Printing</h4>
+          <p class="text-gray-500 text-sm">Professional printing for sharp, vibrant, lasting results.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start reveal">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-violet-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-purple-200 mt-1">
+          <span class="text-white font-poppins font-bold text-sm">5</span>
+        </div>
+        <div class="bg-purple-50 rounded-2xl p-5 flex-1 border border-purple-100">
+          <h4 class="font-poppins font-bold text-brand-dark mb-1">Finishing &amp; Packaging</h4>
+          <p class="text-gray-500 text-sm">Trimmed, laminated, and packed with care.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start reveal">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-200 mt-1">
+          <span class="text-white font-poppins font-bold text-sm">6</span>
+        </div>
+        <div class="bg-pink-50 rounded-2xl p-5 flex-1 border border-pink-100">
+          <h4 class="font-poppins font-bold text-brand-dark mb-1">Delivery</h4>
+          <p class="text-gray-500 text-sm">Ready for pickup or delivered to your door on time.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════ -->
+<section id="testimonials" class="py-24 bg-brand-light">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge bg-amber-50 text-accent mb-4 mx-auto inline-flex">
+        <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Testimonials
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
+        What Our Customers <span class="text-accent">Say</span>
+      </h2>
+      <p class="text-gray-500 text-lg max-w-xl mx-auto">
+        Real feedback from the people we're proud to serve.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 stagger">
+
+      <!-- Testimonial 1 -->
+      <div class="reveal testimonial-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-full translate-x-8 -translate-y-8"></div>
+        <div class="relative z-10">
+          <div class="flex gap-1 mb-4">
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed mb-6">
+            "Excellent printing quality and timely delivery. The best printing center in Cherupuzha.
+            They designed our business cards beautifully and the print quality was outstanding."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary to-red-700 flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-poppins font-bold text-sm">R.K.</span>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-brand-dark text-sm">Rajesh K.</div>
+              <div class="text-gray-400 text-xs">Business Owner, Cherupuzha</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="reveal testimonial-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-full translate-x-8 -translate-y-8"></div>
+        <div class="relative z-10">
+          <div class="flex gap-1 mb-4">
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed mb-6">
+            "They designed our festival notices and banners beautifully. The creative work was exceptional
+            and they delivered everything exactly on time. Highly recommended to everyone!"
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-poppins font-bold text-sm">A.M.</span>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-brand-dark text-sm">Anoop M.</div>
+              <div class="text-gray-400 text-xs">Event Organiser, Taliparamba</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="reveal testimonial-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 rounded-full translate-x-8 -translate-y-8"></div>
+        <div class="relative z-10">
+          <div class="flex gap-1 mb-4">
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+            <span class="text-accent text-xl leading-none">★</span>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed mb-6">
+            "Affordable pricing and friendly service. The team understood exactly what I wanted
+            for my shop board. The final result looked professional and premium. Very happy!"
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-br from-accent to-amber-600 flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-poppins font-bold text-sm">S.P.</span>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-brand-dark text-sm">Sunitha P.</div>
+              <div class="text-gray-400 text-xs">Shop Owner, Cherupuzha</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT & LOCATION
+════════════════════════════════════════════════ -->
+<section id="contact" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge bg-red-50 text-primary mb-4 mx-auto inline-flex">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Contact Us
+      </div>
+      <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
+        Let's Create Something <span class="text-primary">Amazing</span> Together
+      </h2>
+      <p class="text-gray-500 text-lg max-w-xl mx-auto">
+        Visit us, call us, or message us — we're always ready to bring your ideas to life.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+
+      <!-- Left: Contact info -->
+      <div class="reveal-left space-y-5">
+
+        <!-- Address card -->
+        <div class="bg-brand-light rounded-3xl p-7 border border-gray-100 service-card">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-red-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-red-200">
+              <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-poppins font-bold text-brand-dark mb-1">Our Location</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Bus Stand, Near Cherupuzha<br/>
+                Cherupuzha, Kerala – 670511<br/>
+                India
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone card -->
+        <div class="bg-brand-light rounded-3xl p-7 border border-gray-100 service-card">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+              <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-poppins font-bold text-brand-dark">Phone / WhatsApp</h4>
+              <p class="text-gray-500 text-sm">Available during business hours</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+919745397910"
+               class="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl text-white font-semibold transition-all hover:scale-105 text-sm shadow-lg"
+               style="background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); box-shadow: 0 4px 16px rgba(37,99,235,0.35);">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> +91 97453 97910
+            </a>
+            <a href="https://wa.me/919745397910" target="_blank" rel="noopener"
+               class="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl text-white font-semibold transition-all hover:scale-105 text-sm shadow-lg"
+               style="background: linear-gradient(135deg, #15803d 0%, #22c55e 100%); box-shadow: 0 4px 16px rgba(34,197,94,0.35);">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+        <!-- Business hours card -->
+        <div class="bg-brand-light rounded-3xl p-7 border border-gray-100 service-card">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-accent to-amber-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-200">
+              <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-poppins font-bold text-brand-dark">Business Hours</h4>
+              <p class="text-gray-500 text-sm">We're here when you need us</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between items-center py-2">
+              <span class="text-gray-600 text-sm font-medium">Monday – Saturday</span>
+              <span class="text-sm font-semibold bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full">9:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Google Maps -->
+      <div class="reveal-right rounded-3xl overflow-hidden shadow-xl border border-gray-100 min-h-[420px]">
+        <iframe
+          title="Print Point Location — Bus Stand, Cherupuzha, Kerala"
+          src="https://maps.google.com/maps?q=Cherupuzha+Bus+Stand+Kerala+670511&output=embed&z=15"
+          width="100%"
+          height="100%"
+          style="min-height:420px;border:0;display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="bg-brand-dark text-white">
+
+  <!-- Top footer -->
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Brand col -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-2.5 mb-5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-red-700 flex items-center justify-center">
+            <span class="text-white font-poppins font-bold text-lg">P</span>
+          </div>
+          <div>
+            <span class="font-poppins font-bold text-xl text-white">Print<span class="text-primary">Point</span></span>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">
+          Your complete printing and design partner in Cherupuzha, Kerala. Design. Print. Inspire.
+        </p>
+        <div class="flex gap-3">
+          <a href="tel:+919745397910"
+             class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+          </a>
+          <a href="https://wa.me/919745397910" target="_blank" rel="noopener"
+             class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-green-600 transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+          </a>
+          <a href="#contact"
+             class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h5 class="font-poppins font-bold text-white mb-5">Quick Links</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#home"      class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Home</a></li>
+          <li><a href="#about"     class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>About</a></li>
+          <li><a href="#services"  class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Services</a></li>
+          <li><a href="#portfolio" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Portfolio</a></li>
+          <li><a href="#why-us"    class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Why Choose Us</a></li>
+          <li><a href="#contact"   class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h5 class="font-poppins font-bold text-white mb-5">Services</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Graphic Design</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Flex Printing</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Advertisement Design</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Photo Frames</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Mementos</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Business Printing</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact info -->
+      <div>
+        <h5 class="font-poppins font-bold text-white mb-5">Contact</h5>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <i data-lucide="map-pin" class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Bus Stand, Near Cherupuzha<br/>
+              Cherupuzha, Kerala – 670511
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <i data-lucide="phone" class="w-4 h-4 text-primary flex-shrink-0"></i>
+            <a href="tel:+919745397910" class="text-gray-400 text-sm hover:text-white transition-colors">+91 97453 97910</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i data-lucide="message-circle" class="w-4 h-4 text-green-400 flex-shrink-0"></i>
+            <a href="https://wa.me/919745397910" target="_blank" rel="noopener" class="text-gray-400 text-sm hover:text-white transition-colors">WhatsApp Us</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i data-lucide="clock" class="w-4 h-4 text-accent flex-shrink-0"></i>
+            <p class="text-gray-400 text-sm">Mon – Sat: 9:00 AM – 8:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-gray-500 text-sm">© 2026 Print Point. All Rights Reserved.</p>
+      <p class="text-gray-600 text-xs">Bus Stand, Cherupuzha, Kerala 670511 · +91 97453 97910</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════
+     FLOATING WhatsApp FAB
+════════════════════════════════════════════════ -->
+<a href="https://wa.me/919745397910" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-2xl shadow-green-400/50 hover:bg-green-600 transition-all hover:scale-110 pulse-ring">
+  <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+</a>
+
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════ -->
+<script>
+  // Init Lucide
+  lucide.createIcons();
+
+  // ── Navigation scroll effect ──────────────────
+  const navbar = document.getElementById('navbar');
+  function updateNav() {
+    if (window.scrollY > 40) {
+      navbar.classList.remove('nav-transparent');
+      navbar.classList.add('nav-scrolled');
+    } else {
+      navbar.classList.remove('nav-scrolled');
+      navbar.classList.add('nav-transparent');
+    }
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  // ── Mobile menu toggle ────────────────────────
+  const menuBtn  = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+    menuIcon.setAttribute('data-lucide', menuOpen ? 'x' : 'menu');
+    lucide.createIcons();
+  });
+
+  function closeMobileMenu() {
+    menuOpen = false;
+    mobileMenu.classList.remove('open');
+    menuIcon.setAttribute('data-lucide', 'menu');
+    lucide.createIcons();
+  }
+
+  // ── Scroll reveal ─────────────────────────────
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  // ── Counter animation ─────────────────────────
+  let countersStarted = false;
+
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 2000;
+    const step = 16;
+    const steps = duration / step;
+    const increment = target / steps;
+    let current = 0;
+
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(current).toLocaleString() + suffix;
+    }, step);
+  }
+
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !countersStarted) {
+        countersStarted = true;
+        document.querySelectorAll('.counter-num').forEach(animateCounter);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const statsSection = document.getElementById('stats-section');
+  if (statsSection) statsObserver.observe(statsSection);
+
+  // ── Active nav link on scroll ─────────────────
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+  const activeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.remove('text-primary');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('text-primary');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(s => activeObserver.observe(s));
+</script>
+
+</body>
+</html>
