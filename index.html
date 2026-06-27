@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Print Point | Printing Press, Flex Printing &amp; Graphic Design in Cherupuzha, Kerala</title>
-  <meta name="description" content="Print Point is a leading printing press in Cherupuzha, Kerala offering graphic design, flex printing, photo frames, mementos, festival notices, banners, visiting cards and complete printing solutions." />
-  <meta name="keywords" content="Printing Press Cherupuzha, Flex Printing Cherupuzha, Graphic Design Cherupuzha, Printing Services Kerala, Banner Printing Kannur, Photo Frames Cherupuzha, Mementos Cherupuzha, Festival Notice Printing, Advertisement Design Kerala" />
+  <meta name="description" content="Print Point is a leading digital printing press in Cherupuzha, Kerala offering graphic design, flex printing, mug printing, t-shirt printing, photo frames, mementos, banners, visiting cards and complete printing &amp; advertising solutions." />
+  <meta name="keywords" content="Printing Press Cherupuzha, Flex Printing Cherupuzha, Graphic Design Cherupuzha, Mug Printing Kerala, T-Shirt Printing Cherupuzha, Cap Printing Kerala, Tile Printing Kerala, Printing Services Kerala, Banner Printing Kannur, Photo Frames Cherupuzha, Mementos Cherupuzha, Festival Notice Printing, Advertisement Design Kerala, Vinyl Printing Kerala" />
   <meta name="author" content="Print Point" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://printpoint.in/" />
@@ -42,7 +42,7 @@
         extend: {
           colors: {
             primary:   '#DC2626',
-            secondary: '#2563EB',
+            secondary: '#22c55e',
             accent:    '#F59E0B',
             brand:     { dark: '#0F172A', light: '#F8FAFC' }
           },
@@ -88,7 +88,7 @@
     .nav-transparent .logo-brand-text { color: #ffffff; }
     .nav-scrolled   .logo-brand-text  { color: #0F172A; }
     .nav-transparent .logo-brand-accent { color: #fbbf24; }
-    .nav-scrolled   .logo-brand-accent  { color: #2563EB; }
+    .nav-scrolled   .logo-brand-accent  { color: #DC2626; }
     .nav-transparent .logo-tagline { color: rgba(255,255,255,0.45); }
     .nav-scrolled   .logo-tagline  { color: #9CA3AF; }
     .nav-transparent .nav-link { color: rgba(255,255,255,0.75); }
@@ -130,7 +130,7 @@
     .portfolio-tile:hover .portfolio-overlay { opacity: 1; }
 
     /* Timeline connector */
-    .timeline-line { position: absolute; left: 50%; transform: translateX(-50%); top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #DC2626, #2563EB); z-index: 0; }
+    .timeline-line { position: absolute; left: 50%; transform: translateX(-50%); top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #DC2626, #22c55e); z-index: 0; }
 
     /* Counter */
     .counter-num { font-family: 'Poppins', sans-serif; }
@@ -183,7 +183,7 @@
     /* Nav call button adapts */
     .nav-transparent .nav-call-btn { background: rgba(255,255,255,0.15); box-shadow: none; border: 1px solid rgba(255,255,255,0.25); }
     .nav-transparent .nav-call-btn:hover { background: rgba(255,255,255,0.25); }
-    .nav-scrolled   .nav-call-btn { background: #2563EB; border: none; }
+    .nav-scrolled   .nav-call-btn { background: #DC2626; border: none; }
     .nav-transparent .nav-transparent-whatsapp { border-color: rgba(74,222,128,0.5); color: #4ade80; }
     .nav-scrolled   .nav-transparent-whatsapp   { border-color: #22c55e; color: #16a34a; }
     .nav-scrolled   .nav-transparent-whatsapp:hover { background: #f0fdf4; }
@@ -233,13 +233,19 @@
   <div class="max-w-7xl mx-auto flex items-center justify-between">
 
     <!-- Logo -->
-    <a href="#home" class="flex items-center gap-2.5 group">
-      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-700 to-red-700 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-        <span class="text-white font-poppins font-bold text-lg leading-none">P</span>
-      </div>
-      <div>
-        <span class="font-poppins font-extrabold text-xl logo-brand-text leading-none block transition-colors duration-300">Print<span class="logo-brand-accent transition-colors duration-300">Point</span></span>
-        <span class="text-[10px] logo-tagline font-inter tracking-widest uppercase leading-none transition-colors duration-300">Design · Print · Inspire</span>
+    <a href="#home" class="flex items-center gap-2 group">
+      <!-- Pin icon matching actual brand -->
+      <svg width="34" height="40" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 group-hover:scale-105 transition-transform drop-shadow-md">
+        <path d="M17 0C7.611 0 0 7.611 0 17c0 9.941 17 23 17 23S34 26.941 34 17C34 7.611 26.389 0 17 0z" fill="#DC2626"/>
+        <circle cx="17" cy="16" r="9.5" fill="white"/>
+        <circle cx="17" cy="16" r="7" fill="#22c55e"/>
+        <text x="17" y="20.5" text-anchor="middle" fill="white" font-size="9" font-weight="900" font-family="Arial, sans-serif">PP</text>
+      </svg>
+      <div class="leading-none">
+        <div class="font-poppins font-extrabold text-xl leading-tight">
+          <span class="logo-brand-accent transition-colors duration-300" style="color:#DC2626;">print</span><span class="logo-brand-text transition-colors duration-300" style="font-weight:900;">point</span>
+        </div>
+        <div class="text-[9px] font-inter font-semibold tracking-wider uppercase leading-none" style="color:#22c55e;">Digital Printing Press</div>
       </div>
     </a>
 
@@ -379,7 +385,7 @@
           <!-- Row 1 — Graphic Design (top-left) -->
           <div class="glass rounded-2xl p-4 float-anim shadow-xl" style="animation-delay:0s">
             <div class="flex items-center gap-3 mb-3">
-              <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0 shadow-md">
+              <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-secondary to-green-700 flex items-center justify-center flex-shrink-0 shadow-md">
                 <i data-lucide="pen-tool" class="w-4 h-4 text-white"></i>
               </div>
               <span class="text-white font-semibold text-sm font-poppins">Graphic Design</span>
@@ -479,7 +485,7 @@
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="tel:+917907436350"
-             class="flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-white font-semibold hover:bg-blue-700 transition-all hover:scale-105 shadow-lg shadow-blue-200">
+             class="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white font-semibold hover:bg-red-700 transition-all hover:scale-105 shadow-lg shadow-red-200">
             <i data-lucide="phone" class="w-4 h-4"></i> Get In Touch
           </a>
           <a href="#services"
@@ -501,7 +507,7 @@
             <div class="text-gray-500 text-sm">Unique visuals that stand out</div>
           </div>
           <!-- Card 2 -->
-          <div class="reveal bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-5 border border-blue-100 service-card">
+          <div class="reveal bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-5 border border-green-100 service-card">
             <div class="w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center mb-3">
               <i data-lucide="award" class="w-5 h-5 text-secondary"></i>
             </div>
@@ -555,7 +561,7 @@
 
     <!-- Header -->
     <div class="text-center mb-16 reveal">
-      <div class="section-badge bg-blue-50 text-secondary mb-4 mx-auto inline-flex">
+      <div class="section-badge bg-green-50 text-secondary mb-4 mx-auto inline-flex">
         <i data-lucide="layers" class="w-3.5 h-3.5"></i> Our Services
       </div>
       <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
@@ -589,7 +595,7 @@
 
       <!-- 2. Printing Services -->
       <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center mb-5 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary to-green-700 flex items-center justify-center mb-5 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
           <i data-lucide="printer" class="w-7 h-7 text-white"></i>
         </div>
         <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Printing Services</h3>
@@ -604,16 +610,25 @@
         </ul>
       </div>
 
-      <!-- 3. Photo & Gift -->
+      <!-- 3. Mementos & Photo Gifts -->
       <div class="reveal bg-white rounded-3xl p-7 shadow-sm border border-gray-100 service-card group flex flex-col">
         <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-amber-600 flex items-center justify-center mb-5 shadow-lg shadow-amber-200 group-hover:scale-110 transition-transform">
           <i data-lucide="gift" class="w-7 h-7 text-white"></i>
         </div>
-        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Photo &amp; Gift Solutions</h3>
-        <p class="text-gray-500 text-sm mb-4">Lasting memories crafted with care.</p>
+        <h3 class="font-poppins font-bold text-xl text-brand-dark mb-2">Mementos &amp; Photo Gifts</h3>
+        <p class="text-gray-500 text-sm mb-1">We print on — lasting memories crafted with care.</p>
+        <div class="flex flex-wrap gap-1.5 mb-3">
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Mug</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">T-Shirt</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Cap</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Tile</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Laser</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Cloth</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Flex</span>
+          <span class="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full">Vinyl</span>
+        </div>
         <ul class="space-y-1.5">
           <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Photo Frames</li>
-          <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Mementos</li>
           <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Certificate Framing</li>
           <li class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>Customized Gifts</li>
         </ul>
@@ -921,7 +936,7 @@
       </div>
 
       <div class="reveal bg-white rounded-2xl p-6 border border-gray-100 service-card text-center">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary/10 to-blue-100 flex items-center justify-center mx-auto mb-4">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary/10 to-green-100 flex items-center justify-center mx-auto mb-4">
           <i data-lucide="shield-check" class="w-7 h-7 text-secondary"></i>
         </div>
         <h4 class="font-poppins font-bold text-brand-dark mb-2">High Quality Printing</h4>
@@ -1050,7 +1065,7 @@
   <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
 
     <div class="text-center mb-20 reveal">
-      <div class="section-badge bg-blue-50 text-secondary mb-4 mx-auto inline-flex">
+      <div class="section-badge bg-green-50 text-secondary mb-4 mx-auto inline-flex">
         <i data-lucide="git-branch" class="w-3.5 h-3.5"></i> Our Process
       </div>
       <h2 class="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
@@ -1085,11 +1100,11 @@
         <!-- Step 2 -->
         <div class="flex items-center gap-12 reveal">
           <div class="flex-1"></div>
-          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center shadow-xl shadow-blue-200">
+          <div class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-green-700 flex items-center justify-center shadow-xl shadow-blue-200">
             <span class="text-white font-poppins font-bold text-lg">2</span>
           </div>
           <div class="flex-1">
-            <div class="bg-blue-50 rounded-2xl p-6 inline-block max-w-sm border border-blue-100">
+            <div class="bg-green-50 rounded-2xl p-6 inline-block max-w-sm border border-green-100">
               <h4 class="font-poppins font-bold text-lg text-brand-dark mb-2">Creative Design</h4>
               <p class="text-gray-500 text-sm">Our designers craft visually stunning, purposeful designs tailored to your brand and message.</p>
             </div>
@@ -1168,10 +1183,10 @@
         </div>
       </div>
       <div class="flex gap-4 items-start reveal">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200 mt-1">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-green-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200 mt-1">
           <span class="text-white font-poppins font-bold text-sm">2</span>
         </div>
-        <div class="bg-blue-50 rounded-2xl p-5 flex-1 border border-blue-100">
+        <div class="bg-green-50 rounded-2xl p-5 flex-1 border border-green-100">
           <h4 class="font-poppins font-bold text-brand-dark mb-1">Creative Design</h4>
           <p class="text-gray-500 text-sm">Designers craft stunning visuals tailored to your brand.</p>
         </div>
@@ -1281,7 +1296,7 @@
             and they delivered everything exactly on time. Highly recommended to everyone!"
           </p>
           <div class="flex items-center gap-3">
-            <div class="w-11 h-11 rounded-full bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-br from-secondary to-green-700 flex items-center justify-center flex-shrink-0">
               <span class="text-white font-poppins font-bold text-sm">A.M.</span>
             </div>
             <div>
@@ -1367,7 +1382,7 @@
         <!-- Phone card -->
         <div class="bg-brand-light rounded-3xl p-7 border border-gray-100 service-card">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-blue-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-green-700 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
               <i data-lucide="phone" class="w-6 h-6 text-white"></i>
             </div>
             <div>
@@ -1440,12 +1455,18 @@
 
       <!-- Brand col -->
       <div class="lg:col-span-1">
-        <div class="flex items-center gap-2.5 mb-5">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-red-700 flex items-center justify-center">
-            <span class="text-white font-poppins font-bold text-lg">P</span>
-          </div>
-          <div>
-            <span class="font-poppins font-bold text-xl text-white">Print<span class="text-primary">Point</span></span>
+        <div class="flex items-center gap-2 mb-5">
+          <svg width="28" height="33" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+            <path d="M17 0C7.611 0 0 7.611 0 17c0 9.941 17 23 17 23S34 26.941 34 17C34 7.611 26.389 0 17 0z" fill="#DC2626"/>
+            <circle cx="17" cy="16" r="9.5" fill="white"/>
+            <circle cx="17" cy="16" r="7" fill="#22c55e"/>
+            <text x="17" y="20.5" text-anchor="middle" fill="white" font-size="9" font-weight="900" font-family="Arial, sans-serif">PP</text>
+          </svg>
+          <div class="leading-none">
+            <div class="font-poppins font-extrabold text-xl leading-tight">
+              <span style="color:#DC2626;">print</span><span class="text-white" style="font-weight:900;">point</span>
+            </div>
+            <div class="text-[9px] font-inter font-semibold tracking-wider uppercase" style="color:#22c55e;">Digital Printing Press</div>
           </div>
         </div>
         <p class="text-gray-400 text-sm leading-relaxed mb-5">
@@ -1484,12 +1505,12 @@
       <div>
         <h5 class="font-poppins font-bold text-white mb-5">Services</h5>
         <ul class="space-y-2.5">
-          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Graphic Design</a></li>
-          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Flex Printing</a></li>
-          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Advertisement Design</a></li>
-          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Photo Frames</a></li>
-          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Mementos</a></li>
-          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-secondary"></i>Business Printing</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Graphic Design</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Flex Printing</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Mug &amp; T-Shirt Printing</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Photo Frames</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Mementos &amp; Gifts</a></li>
+          <li><a href="#services" class="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-primary"></i>Business Printing</a></li>
         </ul>
       </div>
 
